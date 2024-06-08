@@ -113,6 +113,15 @@ For any inquiries or support, please contact:
 
 ## Screenshots
 ![The front view of my project](SharedScreenshot1.jpg)
+![Chronic diseases in my project](SharedScreenshot2.jpg)
+![Team Top Learders](SharedScreenshot3.jpg)
+![Team doctors](SharedScreenshot4.jpg)
+![Team nurses](SharedScreenshot5.jpg)
+![Job opportunities offered by the project to medical graduates for part time and joining the team](SharedScreenshot6.jpg)
+![The Online pharmacy of my project](SharedScreenshot7.jpg)
+![Registration to my project](SharedScreenshot8.jpg)
+![Login to my project](SharedScreenshot9.jpg)
+![Guide to healthy lifestyle in my project](SharedScreenshot03.jpg)
 
 
 
