@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthritis Guide</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Understanding Arthritis</h1>
+        <img src="{% static 'arthritis_image.jpg' %}" alt="Arthritis Image">
+        <p>Discover the basics of arthritis and how you can manage its symptoms for a better quality of life.</p>
+    </header>
+
+    <section class="education">
+        <h2>What is Arthritis?</h2>
+        <p>Arthritis is a common condition that affects the joints...</p>
+        <p>Common types of arthritis include:</p>
+        <ul>
+            <li>Osteoarthritis</li>
+            <li>Rheumatoid arthritis</li>
+            <li>Psoriatic arthritis</li>
+            <li>Ankylosing spondylitis</li>
+            <!-- Add more types as needed -->
+        </ul>
+        <p>Arthritis can cause joint pain, stiffness, and swelling...</p>
+        <p>Managing arthritis often involves:</p>
+        <ul>
+            <li>Medications</li>
+            <li>Exercise</li>
+            <li>Healthy lifestyle choices</li>
+            <!-- Add more management strategies -->
+        </ul>
+    </section>
+
+    <section class="products">
+        <h2>Our Arthritis Management Products</h2>
+        <div class="product">
+            <img src="{% static 'diclofenac.jpg' %}" alt="Diclofenac">
+                <h3>Diclofenac</h3>
+                <p class="product-description">Powerful anti-inflammatory for joint pain</p>
+
+            <h3>Pain Relief Cream</h3>
+            <p>A topical cream for soothing joint pain and inflammation.</p>
+        </div>
+        <!-- Include more product listings here -->
+        <p>Explore more products in our <a href="/products" class="product-link">Products</a> page.</p>
+    </section>
+
+    <section class="call-to-action">
+        <h2>Need Expert Advice?</h2>
+        <p>Our team of doctors and nurses specializes in arthritis management. Contact us today for personalized guidance and support.</p>
+        <a href="/doctors_nurses" class="cta-button">Meet Our Healthcare Team</a>
+    </section>
+
+    <footer>
+        <p>Contact: info@healthy_lifestyle.com | Follow Us: [social media links]</p>
+    </footer>
+</body>
+</html>

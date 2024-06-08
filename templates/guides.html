@@ -1,0 +1,152 @@
+ {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <title>Explore Healthy Lifestyle Guides</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h2, h3 {
+            text-align: center;
+            font-size: 1.8rem;
+            line-height: 1.2;
+            color: #222;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #444;
+        }
+        .introduction, .guide-overview, .call-to-action {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .guide-list {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .guide-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .guide-card {
+            display: block;
+            width: 30%;
+            min-width: 200px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            padding: 20px;
+            text-decoration: none;
+            color: #333;
+            transition: box-shadow 0.3s;
+            font-size: 1.1rem;
+        }
+        .guide-card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .guide-icon img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+        .guide-card h4 {
+            margin: 10px 0;
+            font-size: 1.5rem;
+        }
+        .guide-card p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 15px 25px;
+            background: #28a745;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+        .cta-button:hover {
+            background: #218838;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #fff;
+            border-top: 1px solid #ddd;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="introduction">
+            <h2>Explore Our Healthy Lifestyle Guides</h2>
+            <p>Welcome to our collection of health guides designed to help you live a happier and healthier life. Dive into our resources below.</p>
+        </section>
+
+        <section class="guide-overview">
+            <h3>Popular Guides</h3>
+            <div class="guide-cards">
+                <a href="/nutritional_guide" class="guide-card">
+                    <div class="guide-icon">
+                        <img src="{% static 'nutritional_guide.png' %}" alt="Nutrition Guide">
+                    </div>
+                    <h4>Nutrition Guide</h4>
+                    <p>Discover healthy eating habits and nutritious recipes.</p>
+                </a>
+                <a href="/exercises_guide" class="guide-card">
+                    <div class="guide-icon">
+                        <img src="{% static 'exercises_guide.png' %}" alt="Exercise Guide">
+                    </div>
+                    <h4>Exercise Guide</h4>
+                    <p>Learn about the benefits of regular exercise and find workout routines.</p>
+                </a>
+                <a href="/stress_guide" class="guide-card">
+                    <div class="guide-icon">
+                        <img src="{% static 'stress_guide.png' %}" alt="Stress Management Guide">
+                    </div>
+                    <h4>Stress Management</h4>
+                    <p>Explore techniques to reduce stress and improve mental well-being.</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="call-to-action">
+            <h3>Ready to Dive In?</h3>
+            <p>Sign up to access exclusive content and personalized recommendations to support your healthy lifestyle journey.</p>
+            <a href="/register" class="cta-button">Sign Up Now</a>
+        </section>
+
+        <section class="guide-overview">
+            <h3>Additional Resources</h3>
+            <div class="guide-cards">
+                <a href="/sleep_guide" class="

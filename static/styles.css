@@ -1,0 +1,176 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #2196F3; /* Material Blue */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.logo {
+  display: inline-block; /* Center the logo */
+  margin-bottom: 10px;
+}
+
+.logo img {
+  max-width: 150px; /* Adjust as needed */
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section Styles */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+.hero .hero-content {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hero h2 {
+  font-size: 3rem; /* Increased font size */
+  margin-bottom: 30px; /* Increased spacing below the heading */
+  font-weight: bold; /* Make the text more prominent */
+}
+
+.hero p {
+  font-size: 1.5rem; /* Increased font size */
+  margin-bottom: 30px; /* Increased spacing below the paragraph */
+}
+
+.hero .cta-button {
+  padding: 15px 30px; /* Increased button padding */
+  font-size: 1.5rem; /* Increased font size */
+}
+
+.hero .hero-image img {
+  max-width: 80%; /* Reduced image size */
+  height: auto;
+  margin-top: 30px; /* Increased spacing between text and image */
+}
+
+/* Guide Categories Styles */
+.guide-categories {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Add spacing between category cards */
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px; /* Increased padding */
+  border: 1px solid #ccc; /* Add border to category cards */
+  border-radius: 15px; /* Add border radius to category cards */
+  transition: transform 0.3s, box-shadow 0.3s; /* Add transition effect */
+}
+
+.category-card:hover {
+  transform: translateY(-5px); /* Lift card on hover */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+.category-card img {
+  max-width: 120px; /* Adjusted image size */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Featured Guide Styles */
+.featured-guide {
+  padding: 30px 0; /* Reduced padding */
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.featured-guide h2 {
+  font-size: 2.5rem; /* Increased font size */
+  margin-bottom: 20px; /* Added more spacing below the heading */
+}
+
+.featured-guide .guide-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featured-guide img {
+  max-width: 200px; /* Adjusted image size */
+  height: auto;
+  margin-bottom: 20px; /* Added more spacing below the image */
+}
+
+/* Call to Action Styles */
+.call-to-action {
+  padding: 50px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.call-to-action h2 {
+  font-size: 3rem; /* Increased font size */
+  margin-bottom: 30px; /* Added more spacing below the heading */
+  font-weight: bold; /* Make the text more prominent */
+}
+
+.call-to-action p {
+  font-size: 1.5rem; /* Increased font size */
+  margin-bottom: 30px; /* Increased spacing below the paragraph */
+}
+
+.call-to-action .cta-button {
+  padding: 15px 30px; /* Increased button padding */
+  font-size: 1.5rem; /* Increased font size */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #007bff; /* Dark blue footer background */
+  color: white; /* Light text color */
+  padding: 20px 0; /* Add padding top and bottom */
+  text-align: center; /* Center-align the content */
+}
+
+.footer-app-download {
+  margin-top: 20px; /* Add spacing above the app download section */
+}
+
+.footer-app-download a {
+  padding: 15px 30px; /* Increased button padding */
+  font-size: 1.5rem; /* Increased font size */
+}

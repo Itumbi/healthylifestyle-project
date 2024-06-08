@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <title>Healthy Life Style</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{% static 'Healthties.png' %}" alt="Healthties Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about_us">About_Us</a></li>
+                <li><a href="/doctors_nurses">Doctors/Nurses</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="/community">Community</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Take Control of Your Health</h2>
+                <p>Discover trusted resources and connect with experts to manage your chronic illness and live a healthier life.</p>
+                <a href="/explore_guide" class="cta-button">Explore Guides</a>
+            </div>
+            <div class="hero-image">
+                <img src="{% static 'Hero image.jpg' %}" alt="Hero Image">
+            </div>
+        </section>
+
+        <section class="guide-categories">
+            <h2>Find Your Guide</h2>
+            <div class="category-grid">
+                <a href="/diabetes_guide" class="category-card">
+                    <img src="{% static 'Diabetes image.png' %}" alt="Diabetes Icon">
+                    <h3>Diabetes</h3>
+                </a>
+                <a href="/heart_disease_guide" class="category-card">
+                    <img src="{% static 'Heart icon.png' %}" alt="Heart Icon">
+                    <h3>Heart Disease</h3>
+                </a>
+                <a href="/arthritis_guide" class="category-card">
+                    <img src="{% static 'Arthritis image.png' %}" alt="Arthritis Icon">
+                    <h3>Arthritis</h3>
+                </a>
+                <!-- Add more category cards as needed -->
+            </div>
+        </section>
+
+        <section class="featured-guide">
+            <h2>Featured Guide: [Healthy_lifestyle guide]</h2>
+            <div class="guide-content">
+                <img src="{% static 'Guide image.jpeg' %}" alt="Guide Image">
+                <div>
+                    <h3>[Healthy_lifestyle guide]</h3>
+                    <p>[ Welcome to our Healthy Lifestyle Guide! This comprehensive guide is designed to help you and your loved ones live a happier, healthier life. Whether you're managing a chronic illness or simply striving for overall wellness, our guide offers practical tips, expert advice, and resources to support your journey. From nutritious meal ideas and effective exercise routines to stress management techniques and self-care practices, we've got you covered. Explore our guide to discover actionable steps you can take to improve your well-being and enjoy life to the fullest.]</p>
+                    <a href="/guides" class="read-more-button">Read More</a>
+                </div>
+            </div>
+            <!-- Improve this section to make it more eye-catching and informative -->
+        </section>
+
+        <section class="call-to-action">
+            <h2>Ready to Start Your Journey?</h2>
+            <p>Join our supportive community, connect with experts, and discover the resources you need to thrive.</p>
+            <a href="/register" class="cta-button">Get Started</a>
+            <!-- Enhance this section to make it more compelling -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Healthy Life Style - All Rights Reserved</p>
+        <div class="footer-app-download">
+            <!-- Add a section for downloading the app from the Play Store and App Store -->
+            <p>Download on the <a href="#" class="cta-link">Play Store</a> or <a href="#" class="cta-link">App Store</a></p>
+        </div>
+    </footer>
+
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>

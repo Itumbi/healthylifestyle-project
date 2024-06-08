@@ -1,0 +1,20 @@
+{
+  "files": {
+    "django_project/forms.py": [
+      {
+        "id": "bf920729-f4b8-47a9-b1e8-bd5155be4bea",
+        "line": 1,
+        "version": 28,
+        "index": 0
+      }
+    ],
+    "manage.py": [
+      {
+        "id": "1e4a6651-9727-4296-a326-c15d92cee782",
+        "line": 7,
+        "version": 1,
+        "index": 107
+      }
+    ]
+  }
+}

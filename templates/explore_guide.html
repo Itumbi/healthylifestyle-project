@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <title>Explore Guides - Healthy Life Style</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            font-size: 1rem; /* Increased base font size */
+            line-height: 1.6; /* Improved line height for readability */
+        }
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h2, h3 {
+            text-align: center;
+            font-size: 1.8rem; /* Increased heading size */
+            line-height: 1.2;
+            color: #222; /* Improved contrast */
+        }
+        p {
+            font-size: 1.2rem; /* Increased paragraph font size */
+            line-height: 1.8;
+            color: #444; /* Slightly darker text for better contrast */
+        }
+        .introduction, .guide-overview, .call-to-action {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .guide-list {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .guide-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .guide-card {
+            display: block;
+            width: 30%;
+            min-width: 200px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            padding: 20px;
+            text-decoration: none;
+            color: #333;
+            transition: box-shadow 0.3s;
+            font-size: 1.1rem; /* Increased font size for guide cards */
+        }
+        .guide-card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .guide-icon img {
+            width: 60px; /* Increased icon size */
+            height: 60px;
+            margin-bottom: 10px;
+        }
+        .guide-card h4 {
+            margin: 10px 0;
+            font-size: 1.5rem; /* Increased font size */
+        }
+        .guide-card p {
+            font-size: 1.1rem; /* Increased font size */
+            color: #555;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 15px 25px; /* Increased padding */
+            background: #28a745;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            margin: 10px 0;
+            font-size: 1.2rem; /* Increased font size */
+        }
+        .cta-button:hover {
+            background: #218838;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #fff;
+            border-top: 1px solid #ddd;
+            font-size: 1rem; /* Footer text size */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="introduction">
+            <h2>Explore Our Health Guides</h2>
+            <p>Welcome to our health guide section! Here you can find comprehensive guides to help you manage various chronic conditions, discover products, and connect with healthcare professionals.</p>
+        </section>
+
+        <section class="guide-overview">
+            <h3>How to Use Our Resources</h3>
+            <p>Our platform offers educational guides on chronic illnesses, products designed for health management, and access to a dedicated healthcare team.</p>
+            <div class="guide-cards">
+                <a href="/diabetes_guide" class="guide-card">
+                    <div class="guide-icon">
+                        <img src="{% static 'Diabetes image.png' %}" alt="Diabetes Guide">
+                    </div>
+                    <h4>Diabetes Guide</h4>
+                    <p>Get expert advice on managing diabetes effectively.</p>
+                </a>
+                <a href="/heart_disease_guide" class="guide-card">
+                    <div class="guide-icon">
+                        <img src="{% static 'Heart icon.png' %}" alt="Heart Disease Guide">
+                    </div>
+                    <h4>Heart Disease Guide</h4>
+                    <p>Learn how to maintain heart health and manage heart disease.</p>
+                </a>
+                <a href="/arthritis_guide" class="guide-card">
+                    <div class="guide-icon">
+                        <img src="{% static 'Arthritis image.png' %}" alt="Arthritis Guide">
+                    </div>
+                    <h4>Arthritis Guide</h4>
+                    <p>Find out how to manage arthritis and improve your quality of life.</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="call-to-action">
+            <h3>Ready to Start?</h3>
+            <p>Create an account to access personalized resources and connect with our community.</p>
+            <a href="/register" class="cta-button">Register Now</a>
+        </section>
+
+        <section class="guide-overview">
+            <h3>Additional Resources</h3>
+            <div class="guide-cards">
+                <a href="/products" class="guide-card">
+                    <div class="guide-icon">
+                        <img src="{% static 'products_icon.png' %}" alt="Products">
+                    </div>
+                    <h4>Products</h4>
+                    <p>Discover products to help manage your health condition.</p>
+                </a>
+                <a href="/doctors_nurses" class="guide-card">
+                    <div class="guide-icon">
+                        <img src="{% static 'doctors_nurses_icon.png' %}" alt="Doctors/Nurses">
+                    </div>
+                    <h4>Doctors/Nurses</h4>
+                    <p>Connect with healthcare professionals for expert advice.</p>
+                </a>
+                <a href="/community" class="guide-card">
+                    <div class="guide-icon">
+                        <img src="{% static 'community_icon.png' %}" alt="Community">
+                    </div>
+                    <h4>Community</h4>
+                    <p>Join our community for support and engagement.</p>
+                </a>
+                <a href="/vacancies" class="guide-card">
+                    <div class="guide-icon">
+                        <img src="{% static 'opportunities_icon.png' %}" alt="Opportunities">
+                    </div>
+                    <h4>Opportunities</h4>
+                    <p>Explore opportunities for new graduates and get involved.</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Healthy Life Style - All Rights Reserved</p>
+    </footer>
+</body>
+</html>

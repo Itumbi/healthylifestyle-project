@@ -1,0 +1,160 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors & Nurses - Healthcare Service Platform</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        .container {
+            padding: 40px 20px;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: linear-gradient(90deg, #007bff, #00c6ff);
+            color: white;
+            border-radius: 10px;
+        }
+        .section-header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .section-header p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        .professional-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 30px;
+        }
+        .professional-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+        }
+        .professional-card img {
+            max-width: 100%;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 4px solid #007bff;
+        }
+        .professional-card h3 {
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+        .professional-card p {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+        .cta-section {
+            text-align: center;
+            margin-top: 40px;
+            background-color: #007bff;
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+        }
+        .cta-section h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        .cta-section p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        .cta-section a {
+            font-size: 1.1em;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #007bff;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .cta-section a:hover {
+            background-color: #fff;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Doctors/Nurses Section Header -->
+        <div class="section-header">
+            <h1>Healthy lifestyle Healthcare Team</h1>
+            <p>Meet our experienced doctors and nurses who are at your service.</p>
+            <p>Contact us for consultations and appointments.</p>
+        </div>
+
+        <!-- Experienced Doctors Section -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="professional-card">
+                    <img src="{% static 'doctor1.jpg' %}" alt="Dr. John Doe">
+                    <h3>Dr. John Doe</h3>
+                    <p>Cardiologist</p>
+                    <p><i class="fas fa-phone"></i> Office: +255 123 456 789</p>
+                    <p><i class="fas fa-envelope"></i> Email: dr.johndoe@example.com</p>
+                    <a href="#" class="btn btn-primary">Book Consultation</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="professional-card">
+                    <img src="{% static 'doctor2.jpg' %}" alt="Dr. Sarah Lee">
+                    <h3>Dr. Sarah Lee</h3>
+                    <p>Rheumatologists</p>
+                    <p><i class="fas fa-phone"></i> Office: +255 987 654 321</p>
+                    <p><i class="fas fa-envelope"></i> Email: dr.sarahlee@example.com</p>
+                    <a href="#" class="btn btn-primary">Book Consultation</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experienced Nurses Section -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="professional-card">
+                    <img src="{% static 'nurse1.jpg' %}" alt="Nurse Emma Brown">
+                    <h3>Nurse Emma Brown</h3>
+                    <p>Cardiac Nurse</p>
+                    <p><i class="fas fa-phone"></i> Office: +255 456 789 123</p>
+                    <p><i class="fas fa-envelope"></i> Email: nurse.emmabrown@example.com</p>
+                    <a href="#" class="btn btn-primary">Book Appointment</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="professional-card">
+                    <img src="{% static 'nurse2.jpg' %}" alt="Nurse Olivia White">
+                    <h3>Nurse Olivia White</h3>
+                    <p>Registered Nurse</p>
+                    <p><i class="fas fa-phone"></i> Office: +255 789 123 456</p>
+                    <p><i class="fas fa-envelope"></i> Email: nurse.oliviawhite@example.com</p>
+                    <a href="#" class="btn btn-primary">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action Section -->
+        <div class="cta-section">
+            <h2>Join Our Healthcare Team</h2>
+            <p>Explore job opportunities for new graduates and experienced medical profession.</p>
+            <a href="{% url 'vacancies' %}" class="btn btn-outline-light">View Vacancies</a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath

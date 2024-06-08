@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Guide</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Understanding Heart Disease</h1>
+        <img src="{% static 'heart_disease_image.jpg' %}" alt="Heart Disease Image">
+        <p>Explore different types of heart diseases and learn how to live a heart-healthy lifestyle.</p>
+    </header>
+
+    <section class="education">
+        <h2>Types of Heart Disease</h2>
+        <p>Heart disease encompasses various conditions that affect the heart...</p>
+        <p>Common types include:</p>
+        <ul>
+            <li>Coronary artery disease (CAD)</li>
+            <li>Heart attack (Myocardial infarction)</li>
+            <li>Heart failure</li>
+            <li>Arrhythmias</li>
+            <li>Valvular heart disease</li>
+            <!-- Add more types as needed -->
+        </ul>
+        <p>Each type has its own causes, symptoms, and treatment options...</p>
+    </section>
+
+    <section class="lifestyle-tips">
+        <h2>Living with Heart Disease</h2>
+        <p>If you're living with heart disease, there are steps you can take to manage your condition and improve your quality of life...</p>
+        <ul>
+            <li>Follow a heart-healthy diet</li>
+            <li>Engage in regular physical activity</li>
+            <li>Quit smoking</li>
+            <li>Manage stress</li>
+            <li>Take medications as prescribed</li>
+            <!-- Add more lifestyle tips -->
+        </ul>
+        <p>Consult with your healthcare provider for personalized advice and treatment...</p>
+    </section>
+
+    <section class="products">
+        <h2>Our Heart Health Products</h2>
+        <div class="product">
+             <img src="{% static 'atorvastatin.jpg' %}" alt="Atorvastatin">
+                <p class="product-description">Lowers cholesterol and prevents heart disease</p>
+            <h3>Heart Health Supplement</h3>
+            <p>A natural supplement to support cardiovascular health and reduce cholesterol levels.</p>
+        </div>
+        <!-- Include more product listings here -->
+        <p>Explore more products in our <a href="/products" class="product-link">Products</a> page.</p>
+    </section>
+
+    <section class="call-to-action">
+        <h2>Need Expert Advice?</h2>
+        <p>Our team of doctors and nurses specializes in heart disease management. Contact us today for personalized guidance and support.</p>
+        <a href="/doctors_nurses" class="cta-button">Meet Our Healthcare Team</a>
+    </section>
+
+    <footer>
+        <p>Contact: info@healthy_lifestyle.com | Follow Us: [social media links]</p>
+    </footer>
+</body>
+</html>
