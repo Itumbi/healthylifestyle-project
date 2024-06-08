@@ -112,6 +112,7 @@ For any inquiries or support, please contact:
 
 
 ## Screenshots
+![Screenshot Description](healthylifestyle-project/screenshot1.png)
 
 
 
