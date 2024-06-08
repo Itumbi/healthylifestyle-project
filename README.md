@@ -112,7 +112,7 @@ For any inquiries or support, please contact:
 
 
 ## Screenshots
-![The front view of my project](healthylifestyle-project/blob/main/SharedScreenshot1.jpg)
+![The front view of my project](SharedScreenshot1.jpg)
 
 
 
