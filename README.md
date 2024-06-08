@@ -120,7 +120,6 @@ For any inquiries or support, please contact:
 ![Job opportunities offered by the project to medical graduates for part time and joining the team](SharedScreenshot6.jpg)
 ![The Online pharmacy of my project](SharedScreenshot7.jpg)
 ![Registration to my project](SharedScreenshot8.jpg)
-![Login to my project](SharedScreenshot9.jpg)
 ![Guide to healthy lifestyle in my project](SharedScreenshot03.jpg)
 
 
